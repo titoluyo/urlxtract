@@ -1,7 +1,7 @@
 const
     http = require('http'),
     URI = require('urijs'),
-    port = 5000,
+    PORT = process.env.PORT || 5000,
     line = '\r\n';
 
 const requestHandler = (req, res) => {
@@ -16,10 +16,10 @@ const requestHandler = (req, res) => {
 
 const server = http.createServer(requestHandler);
 
-server.listen(port, (err) => {
+server.listen(PORT, (err) => {
     if (err) {
         return console.log('something bad happend', err);
     }
 
-    console.log(`server is listening on ${port}`);
+    console.log(`server is listening on ${PORT}`);
 });
