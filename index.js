@@ -11,6 +11,7 @@ const requestHandler = (req, res) => {
     res.write(`full path:${url.toString()}${line}`);
     res.write(`path only:${url.path()}${line}`);
     res.write(`query    :${url.query()}${line}`);
+    res.write('Source: https://github.com/titoluyo/urlxtract')
     res.end();
 };
 
