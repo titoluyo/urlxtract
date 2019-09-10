@@ -1,7 +1,7 @@
 const
     http = require('http'),
     URI = require('urijs'),
-    port = 80
+    port = 3000,
     line = '\r\n';
 
 const requestHandler = (req, res) => {
