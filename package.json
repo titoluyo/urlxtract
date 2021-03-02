@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/titoluyo/urlxtract#readme",
   "dependencies": {
-    "urijs": "^1.19.1"
+    "urijs": "^1.19.6"
   }
 }
